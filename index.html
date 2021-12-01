@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lass</title>
+    <style type="text/css">
+      .check1 {
+        background-color: white;
+        height: auto;
+        margin: 30px;
+      }
+      .h {
+        text-align: center;
+        font-size: 2.5em;
+      }
+
+      .bd {
+        border: 2px dotted blue;
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 70%;
+        margin: auto;
+      }
+
+      ul {
+        list-style: none;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      #header {
+        background: #00002a;
+        height: auto;
+        width: 100%;
+        padding: 20px 0 80px 0;
+      }
+
+      #nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #header-img {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #fff;
+        width: 9em;
+      }
+
+      nav ul {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+      }
+
+      .nav-link {
+        display: block;
+        padding: 0px 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1em;
+        cursor: pointer;
+      }
+
+      .head-flex {
+        margin: 90px auto 20px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .flex-text {
+        width: calc(50% - 40px);
+      }
+
+      .flex-img {
+        width: 50%;
+        height: 200px;
+        background: #9f9f9f;
+        overflow: hidden;
+      }
+
+      .flex-text h2 {
+        font-size: 2.2em;
+        text-align: left;
+        color: #fff;
+        font-weight: 800;
+      }
+
+      .flex-text p {
+        text-align: left;
+        font-size: 1em;
+        color: #fff;
+        margin: 10px 0;
+      }
+
+      .flex-text button {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background: skyblue;
+        color: #fff;
+        padding: 5px 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container" id="nav-bar">
+        <img id="header-img" src="logo.png" />
+
+        <ul>
+          <li><a href="#info" class="nav-link">Info</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#video" class="nav-link">Video</a></li>
+        </ul>
+      </nav>
+
+      <form id="form"></form>
+      <section class="head-flex container" id="about">
+        <div class="flex-text">
+          <h2>This website is awesome</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco
+          </p>
+          <button>Sign Up</button>
+        </div>
+
+        <div class="flex-img">
+          <img
+            src="#"
+            alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+          />
+        </div>
+      </section>
+    </header>
+    <section class="container" id="info">
+      <h1 class="h">Some random information.</h1>
+      <div class="container">
+        <div class="bd">
+          <div></div>
+        </div>
+      </div>
+    </section>
+    <section id="video">
+      <h1 style="color: white; text-align: venter">Video Demo</h1>
+      <iframe
+        width="642"
+        height="361"
+        src="https://www.youtube.com/embed/bnFgGYooDCM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <!--Video Here-->
+    </section>
+  </body>
+</html>
