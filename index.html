@@ -52,7 +52,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+        position:fixed;
+        top:0;
       }
 
       #header-img {
@@ -124,17 +125,55 @@
         width: 100%;
         padding: 20px 0 80px 0;
       }
+
+      .cards {
+            width: 90vw;
+            margin: 3rem auto;
+            display: grid;
+            gap: 1rem;
+            direction: rtl;
+        }
+
+        @media screen and (min-width: 900px) {
+            .cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 640px) and (max-width: 900pxx) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .card {
+            border-radius: 8px;
+            background-color: white;
+            padding: 0.7rem;
+            direction: rtl;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+
     </style>
   </head>
   <body>
-    <header id="header">
-      <nav class="container" id="nav-bar">
-        <img id="header-img" src="logo.png" />
+    <h1 id="header">
+      <img id="header-img" src="https://www.google.com/logos/doodles/2021/seasonal-holidays-2021-6753651837109324-s.png" alt="Company Logo" title=""/>
+      Company LOGO
+      <!--<div id="header-img">
+        <img src="logo.png" alt="Company Logo" title=""/>
+      </div>-->
 
+          
+
+
+      
+      
+      <nav class="container" id="nav-bar" >
         <ul>
           <li><a href="#info" class="nav-link">Info</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#video" class="nav-link">Video</a></li>
+          <li><a href="#videos" class="nav-link">Videos</a></li>
         </ul>
       </nav>
 
@@ -155,7 +194,7 @@
           />
         </div>
       </section>
-    </header>
+    </h1>
     <section class="container" id="info">
       <h1 class="h">Contact US.</h1>
       <div class="container">
@@ -163,9 +202,10 @@
         </div>
       </div>
     </section>
-    <section id="video" style="justify-content: center;">
-      <h1 style="color: white; text-align: venter">Video Demo</h1>
+    <section id="videos" style="justify-content: center;">
+      <h1 style="color: white; text-align: center">Video Demo</h1>
       <iframe
+        id="video"
         width="642"
         height="361"
         src="https://www.youtube.com/embed/bnFgGYooDCM"
@@ -176,14 +216,40 @@
       ></iframe>
       <!--Video Here-->
     </section>
+    <section id="pricing">
+        <div class="cards">
+          <div class=card>
+            <h1>Free</h1>
+            <p>
+              Lorem ipsum.<br/>
+              Lorem ipsum.<br/>
+              Lorem ipsum dolor.<br/>
+              Lorem ipsum.</p>
+          </div>
+          <div class=card>
+            <h1>Silver</h1>
+            <p>
+              Lorem ipsum.<br/>
+              Lorem ipsum.<br/>
+              Lorem ipsum dolor.<br/>
+              Lorem ipsum.</p>
+          </div>
+          <div class=card>
+            <h1>Gold</h1>
+            <p>
+              Lorem ipsum.<br/>
+              Lorem ipsum.<br/>
+              Lorem ipsum dolor.<br/>
+              Lorem ipsum.</p>
+          </div>
+        </div>
+      </section>
+
     <div class="container" id="r">
         <form id="form"  action="https://www.freecodecamp.com/email-submit">
-    
-            <input type="email" id="email" name="fname" placeholder="E-mail"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" ><br><br>
+            <input type="email" id="email" name="email" placeholder="E-mail"><br>
             <input id="submit" type="submit" value="Submit">
-          </form> 
+        </form> 
 
 
 
