@@ -52,6 +52,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
       }
 
       #header-img {
@@ -117,6 +118,12 @@
         padding: 5px 15px;
         cursor: pointer;
       }
+      #r {
+        background: #00002a;
+        height: auto;
+        width: 100%;
+        padding: 20px 0 80px 0;
+      }
     </style>
   </head>
   <body>
@@ -131,35 +138,32 @@
         </ul>
       </nav>
 
-      <form id="form"></form>
+      
       <section class="head-flex container" id="about">
         <div class="flex-text">
           <h2>This website is awesome</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco
+            This is the greatest company in the world
           </p>
-          <button>Sign Up</button>
+          <button>Reach out</button>
         </div>
 
         <div class="flex-img">
           <img
-            src="#"
-            alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+            src="https://www.google.com/search?q=company+logo&client=opera&hs=KcC&sxsrf=AOaemvJMan5zf08_Dt8ST5EohCmFFf85hA:1638379993243&tbm=isch&source=iu&ictx=1&fir=DeNQVf4m_6ldOM%252CNCBOXvn3Ic-jRM%252C_%253BLG_rmBCRmqFMxM%252COcqSA5Cu5qHcxM%252C_%253BHcVZGIBBoHFl7M%252CJ3l62FQM_7X3GM%252C_%253BAljSr-XOTOR43M%252Cb0jJkRLs9_1CyM%252C_%253B6Symp5owzFsY4M%252CMpI1J5TdhAEWaM%252C_%253BeEvt0Fi6U5WftM%252CvY8dMDdjik4ckM%252C_%253BieVtwJHkl0jjiM%252CGJKcSgMXPRK73M%252C_%253BwHjUc1so5gyoLM%252CCGx8rHIc8bj2ZM%252C_%253BFy2S9doSHn1AtM%252CYO7RALzS18zb8M%252C_%253BtK51VrxWoXjd1M%252C72qV_-4Xss0nTM%252C_%253BJddH3GEfNSM3NM%252Ci-tt-6u1o7LvFM%252C_%253BV-DTiM5xXXwWZM%252CqSASkdOGkwr6PM%252C_%253Bz20VsyMwKMnQJM%252C_OChTZjSD43L8M%252C_%253BuF-oXLgnHwG2JM%252CgSVBoAjhNY786M%252C_&vet=1&usg=AI4_-kQIQrR20QvlVCwNJg5awKbrhxyHIw&sa=X&ved=2ahUKEwjx4YOMkcP0AhWjRfEDHSD2DVcQ9QF6BAgUEAE#imgrc=wHjUc1so5gyoLM"
+            alt=""
           />
         </div>
       </section>
     </header>
     <section class="container" id="info">
-      <h1 class="h">Some random information.</h1>
+      <h1 class="h">Contact US.</h1>
       <div class="container">
-        <div class="bd">
-          <div></div>
+
         </div>
       </div>
     </section>
-    <section id="video">
+    <section id="video" style="justify-content: center;">
       <h1 style="color: white; text-align: venter">Video Demo</h1>
       <iframe
         width="642"
@@ -172,5 +176,19 @@
       ></iframe>
       <!--Video Here-->
     </section>
+    <div class="container" id="r">
+        <form id="form"  action="https://www.freecodecamp.com/email-submit">
+    
+            <input type="email" id="email" name="fname" placeholder="E-mail"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" ><br><br>
+            <input id="submit" type="submit" value="Submit">
+          </form> 
+
+
+
+</div>
   </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </html>
